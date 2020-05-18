@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="calc-inputs extra-pad"  id="operation-inputs">
+        <div>
+            <span>Enter data-set size and press enter key</span>
+            <input id="input-size" type="number"> or <button id="random-set">Set random data of 9 input-size</button> 
+        </div>
+        <div class="extra-pad"><i class="arrow down"></i></div>
+        <div id="dataset-collection">
+            your dataset is empty! please set above 
+        </div>
+        <div class="extra-pad"><i class="arrow down"></i></div>
+        <div>
+            <div class="extra-pad">
+                Action : 
+                <select id="algo-type" >
+                    <option value="search">search</option>
+                    <option value="sort" selected>sort</option>
+                </select>
+            </div>
+            <div id="search-operations" class="algo-ops">
+                <input type="number" placeholder="Search number?" id="search-data">
+                <button id="l-search">Linear search</button>
+                <button id="b-search">Binary search</button>
+            </div>
+            <div id="sort-operations" class="algo-ops">
+                <button id="s-sort">Selection sort</button>
+                <button id="b-sort">Bubble sort</button>
+            </div>
+        </div>
+        <div id="info"></div>
+    </div>
+    <canvas id="canvas" >
+
+    </canvas>
+    <script src="js/main.js"></script>
+</body>
+</html>
